@@ -1,0 +1,136 @@
+body{
+  background-color: black;
+  font-family: 'Dancing Script', cursive;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  animation: inicioPag 2s;
+}
+
+/* CSS PARA EL ENCABEZADO */
+#encabezado{
+  /*border: 1px solid black;*/
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 50px;
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+#titulo{
+  /*border:1px solid black;*/
+  width: 50%;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  padding-left: 10px;
+  /*padding-left: 10px;*/
+}
+#menu {
+  /*border:1px solid black;*/
+  width: 50%;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+#menu a{
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  /*color: white;*/
+}
+
+#inicio{
+  text-decoration-line: none;
+}
+/* CIERRE CSS PARA ENCABEZADO */
+
+/*  CSS PARA EL FOOTER */
+footer{
+  display: flex;
+  justify-content:space-around;
+  flex-flow: row nowrap;
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+}
+.imgRedSoc{
+  width: 20px;
+  margin-right: 5px;
+  /*box-shadow: 0px 0px 0 black;*/
+}
+.divFooter{
+  width: 25%;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-weight: bold;
+  text-align:center;
+}
+#redes{
+  /*border: 1px solid black;*/
+  width: 50%;
+  margin: 0 auto;
+}
+#redes p{
+  text-align:left;
+}
+
+.pRedsoc{
+  clear: both;
+}
+.imgRedSoc{
+  float:left;
+  margin-top:2px;
+  margin-bottom:2px;
+  /*border:1px solid black;*/
+}
+.pRedsoc p{
+  /*float:left;*/
+  margin:0;
+}
+#redes{
+  /*border:1px solid black;*/
+  height: auto;
+  width: 150px;
+}
+
+@-webkit-keyframes inicioPag{
+  0%{margin-top:150%;}
+  60%{margin-top:-5%;}
+  100%{margin-top:0%;}
+}
+
+@media screen and (max-width:900px) {
+  /* CSS PARA EL ENCABEZADO */
+  #encabezado{
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+  }
+  #titulo, #menu{
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  /* CIERRE CSS PARA ENCABEZADO */
+  nav div{
+    width: 100%;
+  }
+  footer{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .divFooter{
+    width: 100%;
+  }
+
+}
