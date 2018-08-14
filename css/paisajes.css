@@ -1,0 +1,30 @@
+nav{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #d5c75f;
+}
+nav div{
+  width: 33%;
+  /*border: 1px solid black;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav div img{
+  width: 95%;
+  padding: 20px;
+}
+#img1{
+  -webkit-filter: blur(10px);
+}
+
+#img2, #img4, #img6 {
+  -webkit-filter: grayscale(100%);
+}
+
+#img3 {
+  -webkit-filter: sepia(90%);
+}
